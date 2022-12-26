@@ -6,18 +6,18 @@ Função que faz o LED piscar o o traço
 */
 void dash(int pin){
   	digitalWrite(pin, HIGH);
-  	delay(1500); // Wait for 1000 millisecond(s)
+  	delay(1500); 
   	digitalWrite(pin, LOW);
-  	delay(1500); // Wait for 1000 millisecond(s)
+  	delay(500); 
 }
 /*
 Função que faz o LED piscar o ponto
 */
 void dot(int pin){
     digitalWrite(pin, HIGH);
-  	delay(500); // Wait for 1000 millisecond(s)
+  	delay(500); 
   	digitalWrite(pin, LOW);
-  	delay(500); // Wait for 1000 millisecond(s)    
+  	delay(500);
 
 }
 

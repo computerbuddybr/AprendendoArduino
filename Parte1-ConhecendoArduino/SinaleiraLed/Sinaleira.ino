@@ -1,13 +1,13 @@
 //Definindo os pinos da placa Arduino pra cada cor de led
-const int RED_PIN = 12;
-const int YELLOW_PIN = 7;
-const int GREEN_PIN = 2;
+#define RED_PIN 12
+#define YELLOW_PIN 7
+#define GREEN_PIN 2
 //Definindo o tempo que cada cor de luz fica ligada
-const int LIGHT_TIME = 10000;
+#define LIGHT_TIME 10000
 //Definindo o número de vezes que pisca
-const int BLINKING = 10;
+#define BLINKING 10
 //Definindo o tempo para a piscada da luz
-const int BLINK_TIME = 500;
+#define BLINK_TIME 500
 
 /*
 Função para ligar e apagar a luz
@@ -16,7 +16,6 @@ void lightUPAndDOWN(int pin, int time){
     digitalWrite(pin, HIGH);
     delay(time);
     digitalWrite(pin, LOW);
-    delay(time);
 }
 /*
 Função para fazer luz piscar
@@ -24,6 +23,7 @@ Função para fazer luz piscar
 void blink(int pin){
     for(int i = 0; i < BLINKING; i++){
         lightUPAndDOWN(pin, BLINK_TIME);
+        delay(BLINK_TIME);
     }
 }
 /*
