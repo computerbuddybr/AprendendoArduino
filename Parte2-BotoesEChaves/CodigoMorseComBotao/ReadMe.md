@@ -1,4 +1,4 @@
-# Códgo Morse com botão
+# Código Morse com botão
 Fazer com que os leds pisquem o código morse de A, B ou C dependendo do botão clicado.
 
 
