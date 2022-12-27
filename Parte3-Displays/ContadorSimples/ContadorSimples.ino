@@ -50,8 +50,8 @@ void setup(){
     pinMode(SEG_E, OUTPUT);
     pinMode(SEG_F, OUTPUT);
     pinMode(SEG_G, OUTPUT);
-  Serial.begin(9600);
-  Serial.println("Setup");
+    Serial.begin(9600);
+    Serial.println("Setup");
 
 }
 void loop(){   
